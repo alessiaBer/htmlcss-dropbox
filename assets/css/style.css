@@ -16,13 +16,39 @@ body {
 /* #endregion Common */
 
 /* #region Utilities */
+.container-lg {
+    width: 60%;
+}
 
+.container-sm {
+    width: 50%;
+}
 /* #endregion Utilities */
 
 /* #region Debug*/
+.debug nav {
+    height: 70px;
+    border-bottom: 1px solid black;
+    background-color: gray;
+}
 
+.debug .jumbotron {
+    height: 550px;
+}
+
+.debug .jumbotron>.container-lg {
+    background-color: blue;
+    height: 100%;
+}
 /* #endregion Debug*/
 
 /* #region Header */
+.jumbotron {
+    background-color: var(--db-jumbotron);
+    
+}
 
+.jumbotron>.container-lg {
+    margin: 0 auto;
+}
 /* #endregion Header */
