@@ -52,6 +52,10 @@ section {
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
 }
+
+ul {
+    list-style: none;
+}
 /* #endregion Utilities */
 
 /* #region Debug*/
@@ -92,7 +96,7 @@ section {
     height: 80%;
 }
 
-.debug [class^="col"] {
+.debug [class*="col"] {
     background-color: aqua;
     border: 1px solid blue;
 }
@@ -134,6 +138,32 @@ section {
 .debug #faq {
     height: 510px;
 }
+
+.debug #faq .container-sm {
+    background-color: blueviolet;
+    height: 250px;
+}
+
+.debug #app_footer .container-lg {
+    background-color: grey;
+}
+
+.debug .foot-col {
+    height: 250px;
+}
+
+.debug .footer-bottom  {
+    height: 100px;
+}
+
+.debug .footer-bottom .language {
+    width: 100%;
+    height: 50px;
+    background-color: violet;
+    margin-top: 2rem;
+}
+
+
 /* #endregion Debug*/
 
 /* #region Header */
@@ -153,3 +183,16 @@ section {
     background-color: var(--db-jumbotron);
 }
 /* #endregion Main */
+
+/* #region Footer */
+#app_footer {
+    background-color: #000;
+}
+
+.foot-col {
+    width: calc(100% / 5);
+    margin: 3rem 0;
+}
+
+
+/* #endregion Footer */
