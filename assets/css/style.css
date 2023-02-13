@@ -46,6 +46,10 @@ ul {
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
 }
+
+.col-3 {
+    width: calc(100% /12 * 3 + 20px);
+}
 .col-4 {
     width: calc(100% / 3);
 }
@@ -59,32 +63,31 @@ ul {
 }
 
 .col-8 {
-    width: calc(100% /12 * 8);
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9 - 20px);
 }
 
 a.blue-btn {
     text-decoration: none;
 }
 
+.font-sm {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.d-block {
+    display: block;
+}
 /* #endregion Utilities */
 
 /* #region Debug*/
 
 .debug section {
     margin: 2rem 0;
-}
-
-.debug .jumbotron {
-    height: 600px;
-}
-
-.debug .jumbotron>.container-lg {
-    background-color: blue;
-    height: 100%;
-}
-
-.debug #app_main {
-    background-color: orange;
 }
 .debug #plans {
     height: 1000px;
@@ -107,7 +110,6 @@ a.blue-btn {
 
 .debug [class*="col"] {
     background-color: aqua;
-    border: 1px solid blue;
 }
 
 .debug #plans .col-4 {
@@ -200,10 +202,33 @@ li#logo {
     padding-left: 1rem;
 }
 
+/*.jumbotron */
 .jumbotron {
     background-color: var(--db-jumbotron);
-    
 }
+
+.jumbotron h1 {
+    font-weight: 800;
+    font-size: 3.4rem;
+    padding: 3rem 0 2rem 0;
+}
+
+.jumbotron p {
+    margin-bottom: 1.5rem;
+}
+
+.jumbotron img {
+    width: 110%;
+}
+
+.jumbotron span {
+    margin: 1.5rem 0 3rem 0;
+}
+
+.jumbotron i {
+    font-size: 2.2rem;
+}
+
 /* #endregion Header */
 
 /* #region Main */
