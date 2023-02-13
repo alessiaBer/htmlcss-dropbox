@@ -26,6 +26,26 @@ body {
     margin: 0 auto;
 }
 
+.d-flex {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.blue-btn {
+    padding: 0.4rem 1rem;
+    background-color: var(--db-btn);
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
 .col-4 {
     width: calc(100% / 3);
 }
@@ -42,27 +62,16 @@ body {
     width: calc(100% /12 * 8);
 }
 
-section {
-    margin: 2rem 0;
+a.blue-btn {
+    text-decoration: none;
 }
 
-.row {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-}
-
-ul {
-    list-style: none;
-}
 /* #endregion Utilities */
 
 /* #region Debug*/
-.debug nav {
-    height: 70px;
-    border-bottom: 1px solid black;
-    background-color: gray;
+
+.debug section {
+    margin: 2rem 0;
 }
 
 .debug .jumbotron {
@@ -167,6 +176,30 @@ ul {
 /* #endregion Debug*/
 
 /* #region Header */
+nav {
+    font-weight: 300;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.4rem 1rem;
+}
+
+.left-bar li {
+    padding-right: 1rem;
+}
+
+li#logo {
+    padding-right: 0.3rem;
+}
+
+.left-bar img {
+    width: 90%;
+}
+
+.right-bar li {
+    padding-left: 1rem;
+}
+
 .jumbotron {
     background-color: var(--db-jumbotron);
     
@@ -192,6 +225,7 @@ ul {
 .foot-col {
     width: calc(100% / 5);
     margin: 3rem 0;
+
 }
 
 
