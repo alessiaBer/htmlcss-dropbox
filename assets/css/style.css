@@ -50,6 +50,7 @@ section {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 /* #endregion Utilities */
 
@@ -72,7 +73,7 @@ section {
 .debug #app_main {
     background-color: orange;
 }
-.debug #partner {
+.debug #plans {
     height: 1000px;
     
 }
@@ -81,12 +82,12 @@ section {
     height: 20%;
 }
 
-.debug #partner>.container-sm {
+.debug #plans>.container-sm {
     background-color: red;
     height: 100%;
 }
 
-.debug #partner .row {
+.debug #plans .row {
     background-color: green;
     height: 80%;
 }
@@ -96,21 +97,42 @@ section {
     border: 1px solid blue;
 }
 
-.debug #partner .col-4 {
+.debug #plans .col-4 {
     height: 60%;
 }
 
-.debug #partner .col-12 {
+.debug #plans .col-12 {
     height: 30%;
 }
 
+.debug #partner [class^="col"],
 .debug #operations [class^="col"] {
-    height: 400px; 
+    height: 300px; 
+}
+
+.debug #partner .container-sm {
+    background-color: pink;
+    height: 500px;
 }
 
 .debug #operations .container-sm {
+    background-color: yellow;
+    height: 800px;
+}
+
+.debug #collab .container-sm,
+.debug #free-trial .container-sm {
+    height: 300px;
     background-color: pink;
+}
+
+.debug #designit {
     height: 500px;
+    background-color: #0061ff;
+}
+
+.debug #faq {
+    height: 510px;
 }
 /* #endregion Debug*/
 
@@ -122,8 +144,12 @@ section {
 /* #endregion Header */
 
 /* #region Main */
-#partner .row {
-    margin-bottom: 1.5rem;
+
+#designit {
+    width: 100%;
 }
 
+#free-trial {
+    background-color: var(--db-jumbotron);
+}
 /* #endregion Main */
