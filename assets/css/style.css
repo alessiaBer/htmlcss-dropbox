@@ -1,0 +1,28 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --db-btn: #0061ff;
+    --db-jumbotron: #b4d0e7;
+} 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* #endregion Common */
+
+/* #region Utilities */
+
+/* #endregion Utilities */
+
+/* #region Debug*/
+
+/* #endregion Debug*/
+
+/* #region Header */
+
+/* #endregion Header */
