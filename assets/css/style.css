@@ -86,13 +86,13 @@ a.blue-btn {
 .pr-1 {
     padding-right: 1rem;
 }
+
+h2 {
+    font-size: 1.7rem;
+}
 /* #endregion Utilities */
 
 /* #region Debug*/
-
-.debug section {
-    margin: 2rem 0;
-}
 .debug #plans {
     height: 1000px;
     
@@ -178,6 +178,10 @@ a.blue-btn {
 /* #endregion Debug*/
 
 /* #region Header */
+#app_header {
+    margin-bottom: 6rem;
+}
+
 nav {
     font-weight: 300;
     font-size: 0.9rem;
@@ -240,6 +244,25 @@ li#logo {
 /* #endregion Header */
 
 /* #region Main */
+#app_main {
+    padding-top: 1rem;
+}
+
+#plans .row {
+    margin: 0 -0.5rem;
+}
+
+#plans .col-4 {
+    border: 1px solid rgb(203, 203, 203);
+    margin: 0.5rem;
+    width: calc((100% / 3) -6px);
+}
+
+#plans .fa-check {
+    color: var(--db-btn);
+}
+
+
 
 #designit {
     width: 100%;
