@@ -18,10 +18,12 @@ body {
 /* #region Utilities */
 .container-lg {
     width: 60%;
+    margin: 0 auto;
 }
 
 .container-sm {
     width: 50%;
+    margin: 0 auto;
 }
 /* #endregion Utilities */
 
@@ -33,12 +35,44 @@ body {
 }
 
 .debug .jumbotron {
-    height: 550px;
+    height: 600px;
 }
 
 .debug .jumbotron>.container-lg {
     background-color: blue;
     height: 100%;
+}
+
+.debug #partner {
+    height: 1200px;
+    background-color: orange;
+}
+
+.debug .title {
+    height: 20%;
+}
+
+.debug #partner>.container-sm {
+    background-color: red;
+    height: 100%;
+}
+
+.debug #partner .row {
+    background-color: green;
+    height: 80%;
+}
+
+.debug #partner [class^="col"] {
+    background-color: aqua;
+    border: 1px solid blue;
+}
+
+.debug #partner .col-4 {
+    height: 60%;
+}
+
+.debug #partner .col-12 {
+    height: 30%;
 }
 /* #endregion Debug*/
 
@@ -47,8 +81,21 @@ body {
     background-color: var(--db-jumbotron);
     
 }
-
-.jumbotron>.container-lg {
-    margin: 0 auto;
-}
 /* #endregion Header */
+
+/* #region Main */
+#partner .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+#partner .col-4 {
+    width: calc(100% / 3);
+}
+
+#partner .col-12 {
+    width: 100%;
+}
+/* #endregion Main */
