@@ -25,6 +25,32 @@ body {
     width: 50%;
     margin: 0 auto;
 }
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: calc(100% / 2);
+}
+
+.col-8 {
+    width: calc(100% /12 * 8);
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
 /* #endregion Utilities */
 
 /* #region Debug*/
@@ -43,9 +69,12 @@ body {
     height: 100%;
 }
 
-.debug #partner {
-    height: 1200px;
+.debug #app_main {
     background-color: orange;
+}
+.debug #partner {
+    height: 1000px;
+    
 }
 
 .debug .title {
@@ -62,7 +91,7 @@ body {
     height: 80%;
 }
 
-.debug #partner [class^="col"] {
+.debug [class^="col"] {
     background-color: aqua;
     border: 1px solid blue;
 }
@@ -73,6 +102,15 @@ body {
 
 .debug #partner .col-12 {
     height: 30%;
+}
+
+.debug #operations [class^="col"] {
+    height: 400px; 
+}
+
+.debug #operations .container-sm {
+    background-color: pink;
+    height: 500px;
 }
 /* #endregion Debug*/
 
@@ -85,17 +123,7 @@ body {
 
 /* #region Main */
 #partner .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 1.5rem;
 }
 
-#partner .col-4 {
-    width: calc(100% / 3);
-}
-
-#partner .col-12 {
-    width: 100%;
-}
 /* #endregion Main */
