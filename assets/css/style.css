@@ -272,7 +272,15 @@ li#logo {
     margin: 0rem -0.8rem 3.5rem -0.8rem ;
 }
 
-#plans .card{
+#plans .col-4 {
+    margin-bottom: 2rem;
+}
+
+#plans .col-4 .card {
+    height: 100%;
+}
+
+#plans .card {
     border: 1px solid rgb(203, 203, 203);
     margin: 0.8rem;
 }
