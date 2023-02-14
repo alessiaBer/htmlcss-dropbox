@@ -430,10 +430,6 @@ li#logo {
     background-color: var(--db-florida);
 }
 
-#florida .logo {
-    width: 50%;
-}
-
 #topps {
     background-color: var(--db-topps);
 }
