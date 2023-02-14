@@ -186,13 +186,25 @@ h6 {
     margin-bottom: 9rem;
 }
 
+nav .left-bar li {
+    padding: 1.1rem 0.7rem;
+    align-items: center;
+}
+
+nav .right-bar li {
+    padding: 1.3rem 0.7rem;
+}
+
+nav li:hover {
+    border-bottom: 3px solid blue;
+}
+
 nav {
     background-color: white;
     font-weight: 300;
     font-size: 0.8rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1.1rem 0.7rem 1.1rem 0.7rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -200,27 +212,15 @@ nav {
     z-index: 10000;
 }
 
-.left-bar li {
-    padding-right: 2rem;
-    align-self: center;
-}
-
-li#logo {
-    padding-right: 0.4rem;
-}
-
 .left-bar img {
     width: 85%;
 }
 
-.right-bar li {
-    padding-left: 2rem;
-}
 
 /*.jumbotron */
 .jumbotron {
     background-color: var(--db-primary);
-    margin-top: 4rem;
+    margin-top: 3.5rem;
 }
 
 .jumbotron h1 {
