@@ -10,7 +10,7 @@
     --db-primary: #b4d0e7;
     --db-caption: #f5f5f5;
     --db-designit: #a2d39b;
-    --db-sesignit-border: #d1e9cd;
+    --db-designit-border: #d1e9cd;
     --db-florida: #0093ce;
     --db-arizona: #61082b;
     --db-topps: #ff1c1c;
@@ -65,7 +65,7 @@ ul {
 }
 
 .white-btn {
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     font-size: 0.8rem;
     color: rgb(84, 84, 84);
     background-color: white;
@@ -269,7 +269,7 @@ li#logo {
 }
 
 #plans .card-body {
-    padding: 1.3rem 1.3rem 2rem 1.3rem;
+    padding: 1.3rem 1.5rem 2rem 1.3rem;
 }
 
 #plans .fa-check {
@@ -315,7 +315,7 @@ li#logo {
 
 /* partner */ 
 #partner {
-    margin-top: 7rem;
+    margin: 7rem 0;
 }
 #partner .col-7 img {
     width: 100%;
@@ -336,6 +336,9 @@ li#logo {
 /* /partner */
 
 /* operations */
+#operations {
+    margin-bottom: 7rem;
+}
 #operations .col-4 img {
     width: 100%;
 }
@@ -350,23 +353,82 @@ li#logo {
 /* /operations */
 
 /* teams */
+.teams-top {
+    padding-bottom: 7rem;
+}
+
 #teams h2 {
     width: 60%;
 }
 
 #teams .block {
-    width: 30%;
-}
-
-#teams .square .logo {
-    color: white;
+    width: calc(100% / 3);
 }
 
 .middle-block {
     background-color: var(--db-caption);
+    padding: 2rem;
 }
 
+.middle-block img {
+    width: 50%;
+}
 
+/* .teams-block */
+.teams-blocks .d-flex {
+    flex-wrap: wrap;
+} 
+
+#teams .square {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teams .square .logo {
+    filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(82deg) brightness(104%) contrast(101%);
+    width: 50%;
+}
+
+#designit {
+    background-color: var(--db-designit);
+    border: 0.5rem solid var(--db-designit-border);
+}
+
+#arizona {
+    background-color: var(--db-arizona);
+}
+
+#florida {
+    background-color: var(--db-florida);
+}
+
+#florida .logo {
+    width: 50%;
+}
+
+#topps {
+    background-color: var(--db-topps);
+}
+
+#bicycle {
+    background-color: var(--db-bycicle);
+}
+
+#hearst {
+    background-color: var(--db-primary);
+}
+
+#lonely {
+    background-color: var(--db-lonely);
+}
+
+#clear {
+    background-color: var(--db-clear);
+}
+/* /.teams-block */
 /*  /teams */
 
 /*free-trial */
