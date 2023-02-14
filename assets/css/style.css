@@ -44,6 +44,12 @@ ul {
     color: #fff;
 }
 
+.white-btn {
+    border: 1px solid rgb(84, 84, 84);
+    color: rgb(84, 84, 84);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
 .row {
     display: flex;
     width: 100%;
@@ -54,16 +60,21 @@ ul {
 .col-3 {
     width: calc(100% /12 * 3 + 20px);
 }
+
 .col-4 {
     width: calc(100% / 3);
 }
 
-.col-12 {
-    width: 100%;
+.col-5 {
+    width: calc(100% / 12 * 5);
 }
 
 .col-6 {
     width: calc(100% / 2);
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
 }
 
 .col-8 {
@@ -74,13 +85,26 @@ ul {
     width: calc(100% / 12 * 9 - 20px);
 }
 
+.col-12 {
+    width: 100%;
+}
+
 a.blue-btn {
+    text-decoration: none;
+}
+
+a.white-btn {
     text-decoration: none;
 }
 
 .font-sm {
     font-weight: 300;
     font-size: 0.72rem;
+}
+
+.font-md {
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 .d-block {
@@ -103,6 +127,11 @@ h2 {
 h3 {
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
 }
 
 h6 {
@@ -253,11 +282,6 @@ li#logo {
 }
 
 /* #plans */
-
-#plans section {
-    margin-bottom: 3rem;
-}
-
 #plans .title {
     margin-bottom: 1.5rem;
 }
@@ -327,6 +351,28 @@ li#logo {
 }
 
 /* / #plans */
+
+/* partner */ 
+#partner {
+    margin-top: 7rem;
+}
+#partner .col-7 img {
+    width: 100%;
+}
+
+#partner .col-5 {
+    padding: 2rem 0 0 2rem;
+}
+
+#partner p {
+    margin: 0.5rem 0 1rem 0;
+}
+
+#partner .white-btn {
+    align-self: flex-start;
+}
+
+/* /partner */
 
 #designit {
     width: 100%;
