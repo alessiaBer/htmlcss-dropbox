@@ -383,6 +383,30 @@ li#logo {
 }
 /* /free-trial */
 
+/* faq */
+#faq h2 {
+    border-bottom: 1px solid gray;
+    padding: 7rem 0 2.5rem 0;
+    margin-bottom: 0;
+}
+
+#faq .question {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1.5rem 0;
+    font-size: 0.5rem;
+}
+
+#faq ul li {
+    border-bottom: 1px solid gray;
+}
+
+#faq li p, #faq li .fa-chevron-up {
+    display: none;
+}
+
+/* /faq */
+
 /* #endregion Main */
 
 /* #region Footer */
