@@ -22,7 +22,7 @@ body {
 }
 
 .container-sm {
-    width: 50%;
+    width: 52%;
     margin: 0 auto;
 }
 
@@ -52,7 +52,6 @@ ul {
 }
 .row {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
 }
@@ -374,9 +373,25 @@ li#logo {
 
 /* /partner */
 
-#designit {
+/* operations */
+#operations .col-4 img {
     width: 100%;
 }
+
+#operations .col-4 {
+    padding: 0.7rem;
+}
+
+#operations .col-4 p {
+    margin-top: 1.7rem;
+}
+/* /operations */
+
+/* teams */
+#teams h2 {
+    width: 60%;
+}
+/*  /teams */
 
 #free-trial {
     background-color: var(--db-jumbotron);
