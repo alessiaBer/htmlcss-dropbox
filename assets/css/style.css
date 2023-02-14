@@ -384,6 +384,9 @@ li#logo {
 /* /free-trial */
 
 /* faq */
+#faq {
+    padding-bottom: 6rem;
+}
 #faq h2 {
     border-bottom: 1px solid gray;
     padding: 7rem 0 2.5rem 0;
@@ -412,13 +415,30 @@ li#logo {
 /* #region Footer */
 #app_footer {
     background-color: #000;
+    padding-top: 2rem;
+    font-size: 0.76rem;
+    font-weight: 300;
 }
 
-.foot-col {
+#app_footer .top h4 {
+    color: white;
+    padding-bottom: 0.8rem;
+}
+
+
+#app_footer .item {
     width: calc(100% / 5);
     margin: 3rem 0;
-
 }
 
+#app_footer ul li {
+    color: white;
+    line-height: 1.5rem;
+}
+
+#app_footer .bottom {
+    color: gray;
+    padding: 2rem 0;
+}
 
 /* #endregion Footer */
