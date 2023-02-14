@@ -7,7 +7,16 @@
 
 :root {
     --db-btn: #0061ff;
-    --db-jumbotron: #b4d0e7;
+    --db-primary: #b4d0e7;
+    --db-caption: #f5f5f5;
+    --db-designit: #a2d39b;
+    --db-sesignit-border: #d1e9cd;
+    --db-florida: #0093ce;
+    --db-arizona: #61082b;
+    --db-topps: #ff1c1c;
+    --db-bycicle: #d5001f;
+    --db-lonely: #0d2481;
+    --db-clear: #ffd830;
 } 
 
 body {
@@ -16,6 +25,10 @@ body {
 /* #endregion Common */
 
 /* #region Utilities */
+.container {
+    width: 100%;
+}
+
 .container-lg {
     width: 60%;
     margin: 0 auto;
@@ -44,12 +57,20 @@ ul {
     color: #fff;
 }
 
-.white-btn {
+.bg-btn {
     border: 1px solid rgb(84, 84, 84);
     color: rgb(84, 84, 84);
     padding: 0.5rem;
     font-size: 0.8rem;
 }
+
+.white-btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: rgb(84, 84, 84);
+    background-color: white;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +110,10 @@ ul {
 }
 
 a.blue-btn {
+    text-decoration: none;
+}
+
+a.bg-btn {
     text-decoration: none;
 }
 
@@ -139,77 +164,6 @@ h6 {
 }
 /* #endregion Utilities */
 
-/* #region Debug*/
-
-.debug [class*="col"] {
-    background-color: aqua;
-}
-
-.debug #plans .col-4 {
-    height: 60%;
-}
-
-.debug #plans .col-12 {
-    height: 30%;
-}
-
-.debug #partner [class^="col"],
-.debug #operations [class^="col"] {
-    height: 300px; 
-}
-
-.debug #partner .container-sm {
-    background-color: pink;
-    height: 500px;
-}
-
-.debug #operations .container-sm {
-    background-color: yellow;
-    height: 800px;
-}
-
-.debug #collab .container-sm,
-.debug #free-trial .container-sm {
-    height: 300px;
-    background-color: pink;
-}
-
-.debug #designit {
-    height: 500px;
-    background-color: #0061ff;
-}
-
-.debug #faq {
-    height: 510px;
-}
-
-.debug #faq .container-sm {
-    background-color: blueviolet;
-    height: 250px;
-}
-
-.debug #app_footer .container-lg {
-    background-color: grey;
-}
-
-.debug .foot-col {
-    height: 250px;
-}
-
-.debug .footer-bottom  {
-    height: 100px;
-}
-
-.debug .footer-bottom .language {
-    width: 100%;
-    height: 50px;
-    background-color: violet;
-    margin-top: 2rem;
-}
-
-
-/* #endregion Debug*/
-
 /* #region Header */
 #app_header {
     margin-bottom: 6rem;
@@ -241,7 +195,7 @@ li#logo {
 
 /*.jumbotron */
 .jumbotron {
-    background-color: var(--db-jumbotron);
+    background-color: var(--db-primary);
 }
 
 .jumbotron h1 {
@@ -391,11 +345,44 @@ li#logo {
 #teams h2 {
     width: 60%;
 }
+
+#teams .block {
+    width: 30%;
+}
+
+#teams .square .logo {
+    color: white;
+}
+
+.middle-block {
+    background-color: var(--db-caption);
+}
+
+
 /*  /teams */
 
+/*free-trial */
 #free-trial {
-    background-color: var(--db-jumbotron);
+    background-color: var(--db-primary);
+    padding: 6rem 0 5rem 0;
 }
+
+#free-trial .container-sm {
+    position: relative;
+}
+
+#free-trial a {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+#free-trial h2 {
+    color: var(--db-arizona);
+    width: 50%;
+}
+/* /free-trial */
+
 /* #endregion Main */
 
 /* #region Footer */
