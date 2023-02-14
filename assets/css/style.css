@@ -30,6 +30,10 @@ body {
     display: flex;
 }
 
+.jc-sb {
+    justify-content: space-between;
+}
+
 ul {
     list-style: none;
 }
@@ -76,7 +80,7 @@ a.blue-btn {
 
 .font-sm {
     font-weight: 300;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
 }
 
 .d-block {
@@ -87,6 +91,10 @@ a.blue-btn {
     padding-right: 1rem;
 }
 
+.p-13 {
+    padding: 1.3rem;
+}
+
 h2 {
     font-size: 1.7rem;
     margin-bottom: 2rem;
@@ -94,24 +102,16 @@ h2 {
 
 h3 {
     font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+h6 {
+    font-size: 0.72rem;
+    margin: 1.5rem 0 1rem 0;
 }
 /* #endregion Utilities */
 
 /* #region Debug*/
-.debug #plans {
-    height: 1000px;
-    
-}
-
-.debug #plans>.container-sm {
-    background-color: red;
-    height: 100%;
-}
-
-.debug #plans .row {
-    background-color: green;
-    height: 80%;
-}
 
 .debug [class*="col"] {
     background-color: aqua;
@@ -252,17 +252,39 @@ li#logo {
     padding-top: 1rem;
 }
 
+/* #plans */
+
+#plans section {
+    margin-bottom: 3rem;
+}
+
 #plans .title {
     margin-bottom: 1.5rem;
 }
 
+#plans label {
+    margin-right: 2rem;
+}
+
 #plans .row {
-    margin: 0 -0.5rem 0 -0.5rem ;
+    margin: 0rem -0.8rem 3.5rem -0.8rem ;
 }
 
 #plans .card{
     border: 1px solid rgb(203, 203, 203);
-    margin: 0.5rem;
+    margin: 0.8rem;
+}
+
+#plans .target {
+    width: 100%;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    text-align: center;
+    padding: 0.5rem 0 !important;
+    font-weight: 300;
+}
+
+#plans .card-body {
+    padding: 1.3rem 1.3rem 2rem 1.3rem;
 }
 
 #plans .fa-check {
@@ -270,18 +292,27 @@ li#logo {
     font-weight: bold;
 }
 
-#plans .target {
-    width: 100%;
-    border-bottom: 1px solid rgb(203, 203, 203);
-    text-align: center;
-    padding: 0.5rem 0;
-    font-weight: 300;
+.card .price {
+    font-weight: 700;
 }
 
-.col-12 .d-flex {
-    justify-content: space-between;
-    padding: 2rem;
+.card-body .time {
+    margin: 0.5rem 0 1rem 0;
+    color: gray;
 }
+
+#plans .card .btn {
+    margin: 2.5rem 0 2rem 0;
+    text-align: center;
+}
+
+#plans ul li {
+    padding: 0.4rem 0;
+}
+
+#azienda-list {
+    margin-top: 2.5rem;
+} 
 
 #plans .card-left {
     width: 60%;
@@ -290,6 +321,12 @@ li#logo {
 .card-right {
     padding-top: 0.5rem;
 }
+
+.card-left .price {
+    margin-bottom: 2rem;
+}
+
+/* / #plans */
 
 #designit {
     width: 100%;
