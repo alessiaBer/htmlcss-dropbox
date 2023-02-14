@@ -162,6 +162,23 @@ h6 {
     font-size: 0.72rem;
     margin: 1.5rem 0 1rem 0;
 }
+
+.sm-line {
+    width: 2rem;
+    margin: 2rem 0; 
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.mid-line {
+    width: 5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.footer-line {
+    width: 6rem;
+    border-bottom: 1px solid gray;
+}
 /* #endregion Utilities */
 
 /* #region Header */
@@ -291,6 +308,10 @@ li#logo {
     text-align: center;
 }
 
+#plans .card .blue-btn {
+    padding: 0.6rem 1.65rem;
+}
+
 #plans ul li {
     padding: 0.4rem 0;
 }
@@ -372,8 +393,12 @@ li#logo {
 
 .middle-block img {
     width: 50%;
+    padding-bottom: 2rem;
 }
 
+.middle-block span {
+    padding: 2rem 0;
+}
 /* .teams-block */
 .teams-blocks .d-flex {
     flex-wrap: wrap;
@@ -463,6 +488,10 @@ li#logo {
     margin-bottom: 0;
 }
 
+#faq ul li {
+    border-bottom: 1px solid gray;
+}
+
 #faq .question {
     justify-content: space-between;
     align-items: center;
@@ -470,13 +499,27 @@ li#logo {
     font-size: 0.5rem;
 }
 
-#faq ul li {
-    border-bottom: 1px solid gray;
+#faq p {
+    margin: -1.5rem 0 1rem 0;
+    font-size: 0.8rem;
 }
 
 #faq li p, #faq li .fa-chevron-up {
     display: none;
 }
+/* faq effect */
+#faq li:hover .fa-chevron-down {
+    display: none;
+}
+
+#faq li:hover .fa-chevron-up {
+    display: inline-block;
+}
+
+#faq li:hover p {
+    display: inline-block;
+}
+/* /faq effect */
 
 /* /faq */
 
@@ -498,7 +541,7 @@ li#logo {
 
 #app_footer .item {
     width: calc(100% / 5);
-    margin: 3rem 0;
+    margin: 3rem 0 6rem 0;
 }
 
 #app_footer ul li {
