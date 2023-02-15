@@ -207,6 +207,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 10000;
+    box-shadow: 1px solid var(--db-light);
 }
 
 .nav-list {
@@ -231,7 +232,7 @@ nav img {
 /*.jumbotron */
 .jumbotron {
     background-color: var(--db-primary);
-    margin-top: 3.5rem;
+    margin-top: 3.3rem;
 }
 
 .jumbotron h1 {
@@ -569,3 +570,16 @@ nav img {
 }
 
 /* #endregion Footer */
+
+.prova {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prova img {
+    width: 50%;
+}
