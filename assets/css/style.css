@@ -242,6 +242,11 @@ nav .right-bar li {
     padding: 1.3rem 0.8rem;
 }
 
+.nav-list li a {
+    text-decoration: none;
+    color: var(--db-darker);
+}
+
 nav img {
     padding-top: 0.3rem;
     width: 75%;
