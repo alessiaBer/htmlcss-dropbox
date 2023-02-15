@@ -570,16 +570,3 @@ nav img {
 }
 
 /* #endregion Footer */
-
-.prova {
-    width: 100px;
-    aspect-ratio: 1 / 1;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.prova img {
-    width: 50%;
-}
