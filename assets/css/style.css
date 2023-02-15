@@ -7,6 +7,7 @@
 
 :root {
     --db-btn: #0061ff;
+    --db-btn-hov: #317ef9;
     --db-primary: #b4d0e7;
     --db-lighter: #fff;
     --db-darker: #000;
@@ -72,7 +73,7 @@ ul {
 }
 
 .blue-btn:hover {
-    background-color: #317ef9;
+    background-color: var(--db-btn-hov);
 }
 
 .bg-btn {
@@ -214,7 +215,7 @@ h6 {
 
 /* #region Header */
 #app_header {
-    margin-bottom: 9rem;
+    margin-bottom: 6rem;
 }
 
 nav {
@@ -238,7 +239,12 @@ nav {
 
 nav .left-bar li,
 nav .right-bar li {
-    padding: 1.1rem 0.7rem;
+    padding: 1.3rem 0.8rem;
+}
+
+nav img {
+    padding-top: 0.3rem;
+    width: 75%;
 }
 
 nav .nav-item:hover {
@@ -253,7 +259,7 @@ nav img {
 /*.jumbotron */
 .jumbotron {
     background-color: var(--db-primary);
-    margin-top: 3.3rem;
+    margin-top: 3.8rem;
 }
 
 .jumbotron h1 {
@@ -262,8 +268,16 @@ nav img {
     padding: 4rem 0 2rem 0;
 }
 
+.jumbo-text {
+    width: 30%;
+}
+
 .jumbotron p {
     margin-bottom: 1.5rem;
+}
+
+.jumbotron .blue-btn {
+    padding: 0.6rem 1rem;
 }
 
 .jumbotron span {
@@ -273,14 +287,15 @@ nav img {
 .jumbotron i {
     font-size: 2.2rem;
     margin-bottom: 0.7rem;
+    font-weight: bolder;
 }
 
-.jumbotron .col-8 {
-    position: relative;
-} 
+.jumbo-img {
+    width: 70%;
+}
 
 .jumbotron img {
-    max-width: 105%;
+    max-width: 100%;
     margin-bottom: -3.5rem;
 }
 /* #endregion Header */
@@ -290,9 +305,17 @@ nav img {
     padding-top: 1rem;
 }
 
-/* #plans */
+/* #region plans */
 #plans .title {
     margin-bottom: 1.5rem;
+}
+
+#plans h2 {
+    margin-bottom: 0.5rem;
+}
+
+#plans form {
+    padding-top: 2rem;
 }
 
 #plans label {
@@ -364,7 +387,12 @@ nav img {
 }
 
 .card-right {
+    width: 30%;
     padding-top: 0.5rem;
+}
+
+.card-right a {
+    text-align: center;
 }
 
 .card-left .price {
