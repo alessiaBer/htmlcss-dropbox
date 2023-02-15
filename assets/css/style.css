@@ -8,6 +8,10 @@
 :root {
     --db-btn: #0061ff;
     --db-primary: #b4d0e7;
+    --db-lighter: #fff;
+    --db-darker: #000;
+    --db-dark: #545454;
+    --db-light: #BBBBBB;
     --db-caption: #f5f5f5;
     --db-designit: #a2d39b;
     --db-designit-border: #d1e9cd;
@@ -31,16 +35,26 @@ body {
 
 .container-lg {
     width: 62%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .container-sm {
     width: 52%;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 .d-flex {
     display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-iblock {
+    display: inline-block;
 }
 
 .jc-sb {
@@ -54,12 +68,12 @@ ul {
 .blue-btn {
     padding: 0.3rem 0.9rem;
     background-color: var(--db-btn);
-    color: #fff;
+    color: var(--db-lighter);
 }
 
 .bg-btn {
-    border: 1px solid rgb(84, 84, 84);
-    color: rgb(84, 84, 84);
+    border: 1px solid var(--db-dark);
+    color: var(--db-dark);
     padding: 0.5rem;
     font-size: 0.8rem;
 }
@@ -67,8 +81,8 @@ ul {
 .white-btn {
     padding: 0.5rem 2rem;
     font-size: 0.8rem;
-    color: rgb(84, 84, 84);
-    background-color: white;
+    color: var(--db-dark);
+    background-color: var(--db-lighter);
 }
 
 .row {
@@ -131,10 +145,6 @@ a.white-btn {
     font-weight: 300;
 }
 
-.d-block {
-    display: block;
-}
-
 .pr-1 {
     padding-right: 1rem;
 }
@@ -166,18 +176,18 @@ h6 {
 .sm-line {
     width: 2rem;
     margin: 2rem 0; 
-    border-bottom: 1px solid rgb(205, 205, 205);
+    border-bottom: 1px solid var(--db-light);
 }
 
 .mid-line {
     width: 5rem;
     margin-bottom: 2rem;
-    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom: 1px solid var(--db-light);
 }
 
 .footer-line {
     width: 6rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--db-dark);
 }
 /* #endregion Utilities */
 
@@ -187,7 +197,7 @@ h6 {
 }
 
 nav {
-    background-color: white;
+    background-color: var(--db-lighter);
     font-weight: 300;
     font-size: 0.8rem;
     justify-content: space-between;
@@ -248,10 +258,8 @@ nav img {
 } 
 
 .jumbotron img {
-    position: absolute;
-    left: -25px;
-    top: 0;
-    width: 105%;
+    max-width: 105%;
+    margin-bottom: -3.5rem;
 }
 /* #endregion Header */
 
@@ -278,19 +286,19 @@ nav img {
 }
 
 #plans .col-4 .card {
-    height: 100%;
+    min-height: 100%;
 }
 
 #plans .card {
-    border: 1px solid rgb(203, 203, 203);
+    border: 1px solid var(--db-light);
     margin: 0.8rem;
 }
 
 #plans .target {
     width: 100%;
-    border-bottom: 1px solid rgb(203, 203, 203);
+    border-bottom: 1px solid var(--db-light);
     text-align: center;
-    padding: 0.5rem 0 !important;
+    padding: 0.5rem 0;
     font-weight: 300;
 }
 
@@ -309,7 +317,7 @@ nav img {
 
 .card-body .time {
     margin: 0.5rem 0 1rem 0;
-    color: gray;
+    color: var(--db-dark);
 }
 
 #plans .card .btn {
@@ -357,10 +365,6 @@ nav img {
 
 #partner p {
     margin: 0.5rem 0 1rem 0;
-}
-
-#partner .white-btn {
-    align-self: flex-start;
 }
 
 /* /partner */
@@ -488,13 +492,13 @@ nav img {
     padding-bottom: 6rem;
 }
 #faq h2 {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--db-light);
     padding: 7rem 0 2.5rem 0;
     margin-bottom: 0;
 }
 
 #faq ul li {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--db-light);
 }
 
 #faq .question {
@@ -532,14 +536,14 @@ nav img {
 
 /* #region Footer */
 #app_footer {
-    background-color: #000;
+    background-color: var(--db-darker);
     padding-top: 2rem;
     font-size: 0.76rem;
     font-weight: 300;
 }
 
 #app_footer .top h4 {
-    color: white;
+    color: var(--db-lighter);
     padding-bottom: 0.8rem;
 }
 
@@ -550,12 +554,12 @@ nav img {
 }
 
 #app_footer ul li {
-    color: white;
+    color: var(--db-lighter);
     line-height: 1.5rem;
 }
 
 #app_footer .bottom {
-    color: gray;
+    color: var(--db-light);
     padding: 2rem 0;
 }
 
