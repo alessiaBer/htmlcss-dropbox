@@ -428,7 +428,7 @@ nav img {
 
 #teams .square img {
     filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(82deg) brightness(104%) contrast(101%);
-    width: 50%;
+    max-width: 100%;
 }
 
 #designit {
