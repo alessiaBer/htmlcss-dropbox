@@ -419,17 +419,21 @@ nav img {
 } 
 
 .teams-blocks .square {
+    display: flex;
+    align-items: center;
     width: 50%;
     aspect-ratio: 1 / 1;
+}
+
+.teams-blocks .square .logo {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0 auto;
 }
 
 #teams .square img {
     filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(82deg) brightness(104%) contrast(101%);
-    max-width: 100%;
+    width: 50%;
 }
 
 #designit {
