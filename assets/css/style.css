@@ -186,19 +186,6 @@ h6 {
     margin-bottom: 9rem;
 }
 
-nav .left-bar li {
-    padding: 1.1rem 0.7rem;
-    align-items: center;
-}
-
-nav .right-bar li {
-    padding: 1.3rem 0.7rem;
-}
-
-nav li:hover {
-    border-bottom: 3px solid blue;
-}
-
 nav {
     background-color: white;
     font-weight: 300;
@@ -212,10 +199,24 @@ nav {
     z-index: 10000;
 }
 
-.left-bar img {
-    width: 85%;
+.nav-list {
+    width: 100%;
+    justify-content: space-between;
 }
 
+nav .left-bar li,
+nav .right-bar li {
+    padding: 1.1rem 0.7rem;
+}
+
+nav .nav-item:hover {
+    border-bottom: 0.2rem solid blue;
+} 
+
+nav .blue-btn,
+nav img {
+    margin: 0.7rem 1rem;
+}
 
 /*.jumbotron */
 .jumbotron {
@@ -556,6 +557,10 @@ nav {
 #app_footer .bottom {
     color: gray;
     padding: 2rem 0;
+}
+
+#app_footer .bottom .fa-earth-europe {
+    padding-right: 0.2rem;
 }
 
 /* #endregion Footer */
