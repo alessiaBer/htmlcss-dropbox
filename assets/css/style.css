@@ -417,15 +417,16 @@ nav img {
     flex-wrap: wrap;
 } 
 
-#teams .square {
+.teams-blocks .square {
     width: 50%;
     aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
-#teams .square .logo {
+#teams .square img {
     filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(82deg) brightness(104%) contrast(101%);
     width: 50%;
 }
