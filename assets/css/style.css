@@ -163,12 +163,20 @@ a.arrow {
     font-weight: 300;
 }
 
-.pr-1 {
-    padding-right: 1rem;
+.p-2 {
+    padding: 2rem;
 }
 
 .p-13 {
     padding: 1.3rem;
+}
+
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
 }
 
 h2 {
@@ -199,7 +207,7 @@ h6 {
 
 .mid-line {
     width: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-bottom: 1px solid var(--db-light);
 }
 
@@ -452,21 +460,18 @@ nav img {
 
 #teams .block {
     width: calc(100% / 3);
-}
+    height: 0;
+    padding-bottom: calc(100% / 3);
+} 
 
 .middle-block {
     background-color: var(--db-caption);
-    padding: 2rem;
 }
 
 .middle-block img {
     width: 50%;
-    padding-bottom: 2rem;
 }
 
-.middle-block span {
-    padding: 2rem 0;
-}
 /* .teams-block */
 .teams-blocks .d-flex {
     flex-wrap: wrap;
