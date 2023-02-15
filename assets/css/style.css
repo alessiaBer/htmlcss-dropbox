@@ -71,6 +71,10 @@ ul {
     color: var(--db-lighter);
 }
 
+.blue-btn:hover {
+    background-color: #317ef9;
+}
+
 .bg-btn {
     border: 1px solid var(--db-dark);
     color: var(--db-dark);
@@ -78,11 +82,19 @@ ul {
     font-size: 0.8rem;
 }
 
+.bg-btn:hover {
+    color: var(--db-light);
+}
+
 .white-btn {
     padding: 0.5rem 2rem;
     font-size: 0.8rem;
     color: var(--db-dark);
     background-color: var(--db-lighter);
+}
+
+.white-btn:hover {
+    color: var(--db-light);
 }
 
 .row {
@@ -133,6 +145,11 @@ a.bg-btn {
 
 a.white-btn {
     text-decoration: none;
+}
+
+a.arrow {
+    text-decoration: none;
+    color: var(--db-darker);
 }
 
 .font-sm {
@@ -189,6 +206,10 @@ h6 {
     width: 6rem;
     border-bottom: 1px solid var(--db-dark);
 }
+
+.bb-w {
+    border-bottom: 2px solid var(--db-lighter);
+}
 /* #endregion Utilities */
 
 /* #region Header */
@@ -207,7 +228,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 10000;
-    box-shadow: 1px solid var(--db-light);
+    box-shadow: 2px 0 10px var(--db-light);
 }
 
 .nav-list {
@@ -221,7 +242,7 @@ nav .right-bar li {
 }
 
 nav .nav-item:hover {
-    border-bottom: 0.2rem solid blue;
+    border-bottom: 2px solid var(--db-darker);
 } 
 
 nav .blue-btn,
@@ -515,7 +536,7 @@ nav img {
 }
 
 #faq p {
-    margin: -1.5rem 0 1rem 0;
+    margin: -1.5rem 0 2rem 0;
     font-size: 0.8rem;
 }
 
