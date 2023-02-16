@@ -215,15 +215,15 @@ h6 {
     width: 6rem;
     border-bottom: 1px solid var(--db-dark);
 }
-
-.bb-w {
-    border-bottom: 2px solid var(--db-lighter);
-}
 /* #endregion Utilities */
 
 /* #region Header */
 #app_header {
     margin-bottom: 6rem;
+}
+
+nav a, nav li {
+   border-bottom: 2px solid var(--db-lighter); 
 }
 
 nav {
@@ -344,7 +344,7 @@ nav img {
 }
 
 #plans .col-4 .card {
-    min-height: 100%;
+    height: 100%;
 }
 
 #plans .card {
