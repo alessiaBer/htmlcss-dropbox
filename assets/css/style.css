@@ -618,9 +618,15 @@ nav img {
     margin: 3rem 0 6rem 0;
 }
 
-#app_footer ul li {
+#app_footer a {
+    text-decoration: none;
     color: var(--db-lighter);
     line-height: 1.5rem;
+    padding: 0.2rem 0;
+}
+
+#app_footer a:hover {
+    text-decoration: underline;
 }
 
 #app_footer .bottom {
@@ -629,7 +635,10 @@ nav img {
 }
 
 #app_footer .bottom .fa-earth-europe {
-    padding-right: 0.2rem;
+    padding-right: 0.3rem;
 }
 
+#app_footer .bottom .fa-caret-up {
+    padding-left: 0.3rem;
+}
 /* #endregion Footer */
