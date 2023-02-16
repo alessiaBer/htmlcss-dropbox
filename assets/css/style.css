@@ -612,12 +612,6 @@ nav img {
     padding-bottom: 0.8rem;
 }
 
-
-#app_footer .item {
-    width: calc(100% / 5);
-    margin: 3rem 0 6rem 0;
-}
-
 #app_footer a {
     text-decoration: none;
     color: var(--db-lighter);
@@ -625,8 +619,25 @@ nav img {
     padding: 0.2rem 0;
 }
 
-#app_footer a:hover {
+#app_footer .bottom a:hover,
+#app_footer .top a:hover {
     text-decoration: underline;
+}
+
+#app_footer .item {
+    width: calc(100% / 5);
+    margin: 3rem 0 3rem 0;
+}
+
+#app_footer .social i {
+    color: var(--db-lighter);
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    margin: 0 0.5rem 2rem 0;
+}
+
+#app_footer .social i:hover {
+    background-color: var(--db-dark);
 }
 
 #app_footer .bottom {
